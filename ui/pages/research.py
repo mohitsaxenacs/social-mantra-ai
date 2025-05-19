@@ -190,9 +190,7 @@ def get_trending_videos_from_api(niche, count=10):
     # Get YouTube API key from session state using the correct nested structure
     api_keys = st.session_state.get("api_keys", {})
     youtube_api_key = api_keys.get("youtube_api_key", "")
-    cd /Users/mohitsaxena/CascadeProjects/social-media-shorts-video-automation
-    git initcd /Users/mohitsaxena/CascadeProjects/social-media-shorts-video-automation
-    git init
+    
     if not youtube_api_key:
         st.error(
             "YouTube API key not found. Please go to Setup and provide a valid YouTube API key in the API configuration section."
@@ -211,8 +209,7 @@ def get_trending_videos_from_api(niche, count=10):
         "Cooking": ["easy recipes shorts", "cooking tips shorts", "quick meals", "food hacks shorts"],
         "Fitness": ["workout shorts", "fitness tips shorts", "exercise routine", "gym motivation shorts"],
         "Technology": ["tech tips shorts", "gadget review shorts", "smartphone hacks", "tech tutorial shorts"],
-        "Travel": ["travel tips shorts", "destination guide shorts", "vacation hacks", "travel vlog shorts"],cd /Users/mohitsaxena/CascadeProjects/social-media-shorts-video-automation
-        git init
+        "Travel": ["travel tips shorts", "destination guide shorts", "vacation hacks", "travel vlog shorts"],
         "Fashion": ["fashion tips shorts", "outfit ideas shorts", "style guide", "fashion trends shorts"],
         "Beauty": ["makeup tutorial shorts", "skincare routine shorts", "beauty hacks", "hair styling shorts"],
     }

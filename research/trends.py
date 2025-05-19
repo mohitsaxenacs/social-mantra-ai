@@ -125,7 +125,7 @@ class TrendResearch:
                 'beauty': [
                     'Skincare routines', 'Natural ingredients', 'Makeup techniques', 
                     'Hair transformations', 'Product reviews', 'Beauty on a budget',
-                    'Seasonal trends', 'Men's grooming', 'Clean beauty', 
+                    'Seasonal trends', "Men's grooming", 'Clean beauty', 
                     'Multi-use products', 'Quick morning routines', 'Wellness integration',
                     'Cultural beauty practices', 'Beauty tool hacks', 'Ingredient deep dives'
                 ],
