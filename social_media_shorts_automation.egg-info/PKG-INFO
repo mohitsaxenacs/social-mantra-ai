@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: social_media_shorts_automation
+Version: 0.1.0
+Requires-Python: >=3.8
+Requires-Dist: streamlit>=1.28.0
+Requires-Dist: google-api-python-client>=2.86.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: altair>=5.0.0
+Requires-Dist: tenacity>=8.2.0
+Requires-Dist: pyyaml>=6.0

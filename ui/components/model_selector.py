@@ -7,12 +7,32 @@ def model_selector():
     Returns:
         dict: Dictionary of selected models {model_type: model_name}
     """
+    # Initialize models if not in session state
+    if "models" not in st.session_state:
+        st.session_state["models"] = {
+            "voice": "gtts",  # Default to free option
+            "video": "placeholder",  # Default to placeholder
+            "image": "dalle_mini"  # Default to free option
+        }
+    
     # Get current model selections
-    current_models = {
-        "voice": get_model_selection("voice"),
-        "video": get_model_selection("video"),
-        "image": get_model_selection("image")
-    }
+    try:
+        current_models = {
+            "voice": get_model_selection("voice"),
+            "video": get_model_selection("video"),
+            "image": get_model_selection("image")
+        }
+    except Exception as e:
+        print(f"Error getting model selections: {e}")
+        # Fallback to defaults
+        current_models = {
+            "voice": "gtts",
+            "video": "placeholder",
+            "image": "dalle_mini"
+        }
+        # Save defaults to session state
+        for model_type, model_name in current_models.items():
+            save_model_selection(model_type, model_name)
     
     # Voice Generation Section
     st.subheader("Voice Generation Models")

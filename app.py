@@ -1,12 +1,22 @@
-import streamlit as st
 import os
 import sys
+from pathlib import Path
 
-# Make sure the application directories are in the path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# Add the project root to Python path
+project_root = str(Path(__file__).parent.absolute())
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
-# Import UI modules (we'll create these files next)
-from ui.pages import setup, research, generation, upload, analytics
+# Now import the rest of the modules
+import streamlit as st
+
+# Import UI modules using direct imports
+from ui.pages.setup import show as show_setup
+from ui.pages.research import show as show_research
+from ui.pages.generation import show as show_generation
+from ui.pages.upload import show as show_upload
+from ui.pages.analytics import show as show_analytics
+
 from ui.utils.state_management import initialize_session_state
 
 # App styling and configuration
@@ -128,15 +138,15 @@ def main():
     current_page = st.session_state["current_step"]
     
     if current_page == "setup":
-        setup.show()
+        show_setup()
     elif current_page == "research":
-        research.show()
+        show_research()
     elif current_page == "generation":
-        generation.show()
+        show_generation()
     elif current_page == "upload":
-        upload.show()
+        show_upload()
     elif current_page == "analytics":
-        analytics.show()
+        show_analytics()
 
 if __name__ == "__main__":
     main()

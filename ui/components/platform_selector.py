@@ -10,8 +10,27 @@ def platform_selector(simplified=False):
     Returns:
         dict: Dictionary of selected platforms {platform_name: bool}
     """
+    # Initialize selected_platforms if it doesn't exist
+    if "selected_platforms" not in st.session_state:
+        st.session_state["selected_platforms"] = {
+            "youtube": True,
+            "facebook": False,
+            "instagram": False
+        }
+    
     # Get current platform selections
-    current_platforms = get_selected_platforms()
+    try:
+        current_platforms = get_selected_platforms()
+    except Exception as e:
+        print(f"Error getting platforms: {e}")
+        # Default fallback if there's an error
+        current_platforms = {
+            "youtube": True,
+            "facebook": False,
+            "instagram": False
+        }
+        # Save this default to session state
+        save_selected_platforms(current_platforms)
     
     # Only show header and caption if not in simplified mode
     if not simplified:
