@@ -1,8 +1,8 @@
-# Social Media Shorts Video Automation
+# Social Mantra AI
 
 ## Project Overview
 
-The Social Media Shorts Video Automation tool is a comprehensive solution for creating, managing, and publishing viral short-form videos across multiple social media platforms. It automates the entire content creation pipeline from research and ideation to uploading and analytics, all accessible through an intuitive Streamlit web interface.
+The Social Mantra AI tool is a comprehensive solution for creating, managing, and publishing viral short-form videos across multiple social media platforms. It automates the entire content creation pipeline from research and ideation to uploading and analytics, all accessible through an intuitive Streamlit web interface.
 
 ### Supported Platforms
 
@@ -68,7 +68,7 @@ The Social Media Shorts Video Automation tool is a comprehensive solution for cr
 ### Directory Structure
 
 ```
-social-media-shorts-video-automation/
+social-mantra-ai/
 ├── analytics/              # Analytics and performance tracking
 ├── assets/                 # Static assets like music
 ├── config/                 # Configuration files
@@ -138,8 +138,8 @@ social-media-shorts-video-automation/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/social-media-shorts-video-automation.git
-   cd social-media-shorts-video-automation
+   git clone https://github.com/yourusername/social-mantra-ai.git
+   cd social-mantra-ai
    ```
 
 2. Install dependencies:

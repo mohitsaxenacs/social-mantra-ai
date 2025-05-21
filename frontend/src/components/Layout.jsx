@@ -3,7 +3,7 @@ import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { 
   FaCog, FaSearch, FaFileAlt, FaUpload, FaChartBar, FaBars, FaTimes, 
   FaQuestionCircle, FaRobot, FaRegLightbulb, FaRegChartBar, FaUsers, 
-  FaTasks, FaRegNewspaper, FaSignOutAlt
+  FaTasks, FaRegNewspaper, FaSignOutAlt, FaHashtag
 } from 'react-icons/fa';
 
 // Tooltip component for consistent styling and behavior
@@ -46,6 +46,15 @@ const Layout = () => {
       tooltip: 'View real-time analytics for all your connected social media platforms',
       isImplemented: false,
       isNew: true 
+    },
+    { 
+      to: '/social-media-marketing', 
+      icon: <FaHashtag />, 
+      label: 'Marketing Toolset', 
+      tooltip: 'Optimize content with SEO tools, hashtag generators, and thumbnail recommendations using real data from APIs',
+      isImplemented: true,
+      isNew: true,
+      badge: 'NEW' 
     },
     { 
       to: '/ai-assistant', 
@@ -267,7 +276,7 @@ const Layout = () => {
           
           <div className="mt-4 text-xs text-center text-gray-500">
             <p>Using real-time YouTube data</p>
-            <p className="mt-1">&copy; 2025 Shorts Automation</p>
+            <p className="mt-1">&copy; 2025 Social Mantra AI</p>
           </div>
         </div>
       </div>

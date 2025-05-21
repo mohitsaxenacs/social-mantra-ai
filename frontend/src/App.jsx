@@ -8,6 +8,7 @@ import UploadPage from './pages/UploadPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import LoginPage from './pages/LoginPage';
+import SocialMediaMarketingPage from './pages/SocialMediaMarketingPage';
 
 // Protected route wrapper component
 const ProtectedRoute = ({ children }) => {
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="generate-content" element={<ContentGeneration />} />
         <Route path="upload" element={<UploadPage />} />
         <Route path="analytics" element={<AnalyticsPage />} />
+        <Route path="social-media-marketing" element={<SocialMediaMarketingPage />} />
         
         {/* Routes for new features from the roadmap that aren't implemented yet */}
         <Route path="ai-assistant" element={<div className="p-6 bg-white rounded-lg shadow-md"><h1 className="text-2xl font-bold text-gray-800 mb-4">AI Assistant</h1><p className="text-gray-600">This feature is coming soon in a future update.</p></div>} />

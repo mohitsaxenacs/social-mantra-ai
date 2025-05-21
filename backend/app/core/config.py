@@ -4,7 +4,7 @@ import os
 
 class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
-    PROJECT_NAME: str = "Social Media Shorts Automation"
+    PROJECT_NAME: str = "Social Mantra AI"
     BACKEND_CORS_ORIGINS: list = ["http://localhost:3000"]
     DEFAULT_REGION: str = "US"
     

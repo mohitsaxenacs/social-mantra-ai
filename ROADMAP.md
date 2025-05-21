@@ -1,26 +1,28 @@
-# Social Media Shorts Video Automation - Project Roadmap
+# Social Mantra AI - Project Roadmap
 
 ## Version History
 
 | Version | Date | Author | Description |
 |---------|------|--------|-------------|
+| 1.1.0 | 2025-05-21 | Project Team | Added Social Media Marketing Toolset (SEO/SMO) features |
 | 1.0.0 | 2025-05-20 | Project Team | Initial roadmap documentation |
 
 ## Change Log
 
 | Version | Requirement ID | Change Description | Justification |
 |---------|---------------|-------------------|---------------|
+| 1.1.0 | REQ-21.0 | Added Social Media Marketing Toolset | Enhanced marketing capabilities for better content performance and reach |
 | 1.0.0 | Initial | Initial roadmap documentation | Project kickoff |
 
 ---
 
-# Version 1.0.0 - Initial Project Roadmap
+# Version 1.1.0 - Project Roadmap
 
 ## Phased Roadmap Overview
 
 | Phase | Timeline | Focus | Key Deliverables |
 |-------|----------|-------|------------------|
-| Phase 1 | 8-9 Weeks | Foundation & Intelligence Core | User authentication, niche research, analytics, AI assistants, automation |
+| Phase 1 | 8-9 Weeks | Foundation & Intelligence Core | User authentication, niche research, analytics, AI assistants, automation, social media marketing |
 | Phase 2 | 6-7 Weeks | Creativity & Personal Empowerment | Storage systems, prompt repository, editing tools, AI integrations |
 | Phase 3 | 4-5 Weeks | System Scalability & Monetization | Documentation, project management, subscription model, user modes |
 
@@ -132,6 +134,26 @@
 | REQ-10.4 | Critical Update Management | High | Planned |
 | REQ-10.5 | AI News Curation & Relevance Filtering | Low | Planned |
 
+#### REQ-21.0: Social Media Marketing Toolset
+
+| Req ID | Requirement | Priority | Status |
+|--------|-------------|----------|--------|
+| REQ-21.1 | SEO Keyword Research & Analysis | High | Planned |
+| REQ-21.2 | Title & Description Optimization | High | Planned |
+| REQ-21.3 | Trending Hashtag Generator | High | Planned |
+| REQ-21.4 | Hashtag Performance Analyzer | Medium | Planned |
+| REQ-21.5 | Thumbnail Optimization & Testing | High | Planned |
+| REQ-21.6 | Platform-Specific Content Adaptation | Medium | Planned |
+| REQ-21.7 | Viral Potential Predictor | Medium | Planned |
+| REQ-21.8 | Audience Targeting Recommendations | Medium | Planned |
+| REQ-21.9 | Meta Tags & Description Generator | Medium | Planned |
+| REQ-21.10 | Content Performance Forecasting | Low | Planned |
+| REQ-21.11 | Platform-Specific Optimization Checklist | High | Planned |
+| REQ-21.12 | Caption & Hook Generator | High | Planned |
+| REQ-21.13 | Color Psychology & Visual Optimization | Low | Planned |
+| REQ-21.14 | Call-to-Action Optimizer | Medium | Planned |
+| REQ-21.15 | Real-Time Trend Alignment | Medium | Planned |
+
 ---
 
 ### Phase 2 – Creativity & Personal Empowerment (6–7 Weeks)
@@ -239,6 +261,29 @@
 | REQ-20.3 | Mode Switching Interface | Medium | In Progress |
 | REQ-20.4 | Guided Workflows for Beginners | Medium | Planned |
 | REQ-20.5 | Advanced Customization Options | Medium | Planned |
+
+---
+
+## Implementation Notes for Social Media Marketing Toolset
+
+### Real Data Commitment
+
+The Social Media Marketing Toolset (REQ-21.0) follows our commitment to using real data:
+
+- All SEO keyword analysis will use actual search volume data from Google Keyword Planner API
+- Hashtag recommendations and performance metrics will be based on real platform analytics
+- Thumbnail optimization suggestions will be backed by actual engagement data from YouTube/TikTok/Instagram
+- Viral potential predictions will be calculated from real engagement metrics, never simulated data
+- When data isn't available, the system will transparently indicate this rather than using defaults
+
+### Platform-Specific Optimizations
+
+For each of these supported platforms, the toolset will include platform-specific optimizations:
+
+- **YouTube**: Title optimization, thumbnail creation, tag recommendations, end card suggestions
+- **Instagram**: Hashtag optimization, caption generation, carousel post templates
+- **Facebook**: Audience targeting suggestions, engagement prompts, call-to-action optimization
+- **TikTok**: Trending sound recommendations, effect suggestions, hashtag strategies
 
 ---
 

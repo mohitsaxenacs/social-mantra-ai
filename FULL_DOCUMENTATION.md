@@ -1,4 +1,4 @@
-# Social Media Shorts Video Automation - Full Documentation
+# Social Mantra AI - Full Documentation
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@
 
 ## System Overview
 
-The Social Media Shorts Video Automation tool is a comprehensive solution designed to automate the creation, optimization, and distribution of short-form videos across multiple social media platforms (YouTube Shorts, Facebook Reels, and Instagram Reels). The system handles the entire content pipeline from research and ideation to publishing and performance analytics.
+The Social Mantra AI tool is a comprehensive solution designed to automate the creation, optimization, and distribution of short-form videos across multiple social media platforms (YouTube Shorts, Facebook Reels, and Instagram Reels). The system handles the entire content pipeline from research and ideation to publishing and performance analytics.
 
 The application integrates with various AI services for content generation, voice synthesis, and video creation, while providing a user-friendly interface through Streamlit for managing the entire workflow.
 

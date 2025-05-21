@@ -96,7 +96,7 @@ const SetupPage = () => {
     <div className="max-w-5xl mx-auto px-4 py-8">
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-800 mb-3 bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
-          Social Media Shorts Automation
+          Social Mantra AI
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           Research niches, generate content, and upload shorts to various platforms with AI-powered automation.

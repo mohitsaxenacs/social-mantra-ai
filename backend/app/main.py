@@ -3,8 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api import youtube, settings
 
 app = FastAPI(
-    title="Social Media Shorts Automation API",
-    description="API for YouTube Shorts Automation and Niche Analysis",
+    title="Social Mantra AI API",
+    description="API for Social Media Marketing and Niche Analysis",
     version="1.0.0"
 )
 
@@ -23,4 +23,4 @@ app.include_router(settings.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to Social Media Shorts Automation API"}
+    return {"message": "Welcome to Social Mantra AI API"}

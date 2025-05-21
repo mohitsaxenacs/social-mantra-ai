@@ -1,4 +1,4 @@
-# Social Media Shorts Video Automation
+# Social Mantra AI
 
 This tool automates the research, creation, and optimization of short-form videos across multiple social media platforms including YouTube Shorts, Facebook Reels, and Instagram Reels.
 

@@ -51,7 +51,7 @@ const LoginPage = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Shorts Automation
+            Social Mantra AI
           </h2>
           <p className="mt-2 text-sm text-gray-600 max-w">
             AI-powered content creation and social media automation
@@ -206,7 +206,7 @@ const LoginPage = () => {
                 <div className="w-full border-t border-gray-300"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-2 bg-white text-gray-500">New to Shorts Automation?</span>
+                <span className="px-2 bg-white text-gray-500">New to Social Mantra AI?</span>
               </div>
             </div>
 
