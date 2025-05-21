@@ -54,7 +54,7 @@ The Social Mantra AI tool is a comprehensive solution for creating, managing, an
 - **Platform Comparison**: Compares performance across different platforms
 - **Content Adjustment**: Recommends adjustments based on performance data
 
-### 7. User-Friendly Streamlit Interface
+### 7. User-Friendly React Interface
 
 - **Guided Setup**: Step-by-step configuration with helpful tooltips
 - **API Key Management**: Secure handling of all required API keys with instructions
@@ -77,14 +77,17 @@ social-mantra-ai/
 ├── generation/             # Content and audio generation
 ├── research/               # Trend and platform research
 ├── uploads/                # Platform-specific uploaders
-├── ui/                     # Streamlit UI components
-│   ├── pages/              # Multi-page Streamlit app pages
-│   ├── components/         # Reusable UI components
-│   └── utils/              # UI utility functions
+├── frontend/               # React frontend components
+│   ├── src/                # React source code
+│   │   ├── components/     # UI components
+│   │   ├── pages/          # Application pages
+│   └── public/             # Static assets
+├── backend/                # FastAPI backend
+│   ├── main.py             # Main application entry point
+│   ├── routes/             # API routes
+│   └── models/             # Database models
 ├── .env                    # Environment variables (API keys, etc.)
 ├── .env.example            # Template for environment variables
-├── main.py                 # Main application entry point
-├── app.py                  # Streamlit application entry point
 ├── requirements.txt        # Python dependencies
 └── README.md               # Basic project information
 ```
@@ -116,10 +119,8 @@ social-mantra-ai/
 
 #### UI Module
 
-- `app.py`: Main Streamlit application entry point
-- `pages/`: Individual pages for different aspects of the workflow
-- `components/`: Reusable UI components like API key input fields
-- `utils/`: UI helper functions and state management
+- `frontend/`: Modern React application
+- `backend/`: FastAPI backend
 
 ## Setup and Installation
 
@@ -147,18 +148,23 @@ social-mantra-ai/
    pip install -r requirements.txt
    ```
 
-3. Launch the Streamlit application:
+3. Start the development servers:
+
    ```bash
-   streamlit run app.py
+   # Start the backend API server
+   cd backend
+   uvicorn main:app --reload
+   
+   # In another terminal, start the React frontend
+   cd frontend
+   npm start
    ```
 
-4. Follow the guided setup in the Streamlit interface to configure your API keys and preferences.
+4. Follow the guided setup in the React interface to configure your API keys and preferences.
 
-## Streamlit UI Guide
+## React UI Guide
 
-### Getting Started
-
-The Streamlit UI provides an intuitive interface for configuring and running the social media automation tool. The interface is divided into several sections:
+The React UI provides an intuitive interface for configuring and running the social media automation tool. The interface is divided into several sections:
 
 #### 1. Setup & Configuration
 
@@ -186,76 +192,17 @@ The Streamlit UI provides an intuitive interface for configuring and running the
 - **Upload Content**: Publish to selected platforms
 - **Schedule**: Set publication times
 
-### API Key Guide
+### Basic Usage with React UI
 
-The UI provides detailed instructions for obtaining each required API key:
-
-#### YouTube API
-1. Go to [Google Developer Console](https://console.developers.google.com/)
-2. Create a new project
-3. Enable the YouTube Data API v3
-4. Create credentials (OAuth client ID for desktop application)
-5. Download the client secrets JSON file
-
-#### Facebook API
-1. Visit [Facebook for Developers](https://developers.facebook.com/)
-2. Create a new app (Business type)
-3. Add the 'Facebook Login' product
-4. Configure settings and obtain App ID, App Secret
-5. Generate a long-lived access token
-
-#### Instagram
-1. Use your Instagram creator account credentials
-2. No API key needed, just username and password
-
-#### OpenAI API
-1. Visit [OpenAI Platform](https://platform.openai.com/)
-2. Sign up or log in
-3. Navigate to API keys section
-4. Create a new API key
-
-#### ElevenLabs API
-1. Visit [ElevenLabs](https://beta.elevenlabs.io/)
-2. Create an account
-3. Go to your profile
-4. Find your API key in the settings section
-
-#### Video Generation APIs
-
-1. **Runway ML**:
-   - Visit [RunwayML](https://runwayml.com/)
-   - Create an account
-   - Go to settings > API to get your API key
-
-2. **Pika Labs**:
-   - Visit [Pika Labs](https://pika.art/)
-   - Join the waitlist or sign up
-   - Access API credentials from settings
-
-### Recommended Models (2025)
-
-Based on our extensive testing, here are our current recommendations for the best results:
-
-#### Audio/Voice Generation
-- **Best Free Option**: Google Text-to-Speech (gTTS)
-- **Best Premium Option**: ElevenLabs Premade Voices (specifically "Adam" for male and "Rachel" for female)
-
-#### Video Generation
-- **Best Free Option**: Stable Video Diffusion (for simple videos)
-- **Best Premium Option**: Runway Gen-2 (best balance of quality and cost)
-- **Highest Quality (Cost No Object)**: Pika Labs Video Generation
-
-#### Image Generation (For Thumbnails)
-- **Best Free Option**: DALL-E mini
-- **Best Premium Option**: DALL-E 3 or Midjourney v6
-
-## Usage Guide
-
-### Basic Usage with Streamlit UI
-
-1. Launch the application:
+1. Start the development servers:
    ```bash
-   streamlit run app.py
+   # Start the backend API server
+   cd backend
+   uvicorn main:app --reload
+   
+   # In another terminal, start the React frontend
+   cd frontend
+   npm start
    ```
 
 2. The application will open in your default web browser
@@ -270,7 +217,7 @@ Based on our extensive testing, here are our current recommendations for the bes
 
 ### Advanced Options
 
-The Streamlit UI provides advanced options for power users:
+The React UI provides advanced options for power users:
 
 - **Custom Script Editing**: Manually edit generated scripts before voiceover creation
 - **Custom Prompt Engineering**: Fine-tune the prompts used for content generation

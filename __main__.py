@@ -1,4 +1,4 @@
-"""Main entry point for the Social Media Shorts Automation application."""
+"""Main entry point for the Social Mantra AI application."""
 import os
 import sys
 from pathlib import Path

@@ -1,5 +1,4 @@
 analytics
 generation
 research
-ui
 uploads

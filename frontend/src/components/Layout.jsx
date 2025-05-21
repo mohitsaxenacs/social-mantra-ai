@@ -143,7 +143,7 @@ const Layout = () => {
                    flex flex-col`}
       >
         <div className="p-6 bg-gradient-to-r from-primary-600 to-secondary-600">
-          <h1 className="text-xl font-bold text-white">Shorts Automation</h1>
+          <h1 className="text-xl font-bold text-white">Social Mantra AI</h1>
           <p className="text-primary-100 text-sm mt-1 opacity-80">AI-Powered Content Creation</p>
         </div>
 

@@ -48,7 +48,7 @@ class SocialMediaAutomation:
         logger.info("Social Media Automation Tool initialized successfully")
     
     def run(self):
-        print("\n========== SOCIAL MEDIA SHORTS AUTOMATION ==========\n")
+        print("\n========== SOCIAL MANTRA AI ==========\n")
         print("This tool will help you generate viral short-form videos")
         print("for YouTube Shorts, Facebook Reels, and Instagram Reels\n")
         
